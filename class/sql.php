@@ -14,7 +14,7 @@ class Sql extends PDO { 	//classe PDO é nativa do sistema, extend para herdar b
 
 		foreach($parameters as $key => $value){
 
-    		$stmt->bindParam($key, $value);
+    		$this->setParam($statment, $key, $value);
 
     	}
 
