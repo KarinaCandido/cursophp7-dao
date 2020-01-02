@@ -38,10 +38,16 @@ echo json_encode($usuarios);
 //echo $aluno;
 
 //Atualizar usuário
+/*
 $usuario = new Usuario();
 $usuario->loadById(7);
 $usuario->update("trocando_usuario","substituir");
-echo $usuario;
+echo $usuario;*/
 
+//Atualizar usuário   
+/* 	$usuario = new Usuario();
+$usuario->loadById(6);
+$usuario->delete();
+echo $usuario; */
 
 ?>
