@@ -28,8 +28,20 @@ echo json_encode($usuarios);
 
 
 //Carrega dados do usuário buscando por login e senha
+//$usuario = new Usuario();
+//$usuario->login("admin", "!@#$");
+//echo $usuario;
+
+//Criar novo usuário
+//$aluno = new Usuario("aluno", "@lun0");
+//$aluno->insert();
+//echo $aluno;
+
+//Atualizar usuário
 $usuario = new Usuario();
-$usuario->login("admin", "!@#$");
+$usuario->loadById(7);
+$usuario->update("trocando_usuario","substituir");
 echo $usuario;
+
 
 ?>
